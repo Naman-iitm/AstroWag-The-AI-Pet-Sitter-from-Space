@@ -1,0 +1,76 @@
+
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0b0c10;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 2rem;
+}
+
+.content {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Wavy Gradient Animation */
+.glow-text {
+  font-size: 3rem;
+  font-weight: 900;
+  background: linear-gradient(270deg, #00eaff, #8a2be2, #ff00ff);
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: waveGlow 6s ease infinite;
+}
+
+@keyframes waveGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #c5c6c7;
+}
+
+.cta-button {
+  margin-top: 2rem;
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: #00eaff;
+  color: #0b0c10;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #ff00ff;
+  color: white;
+}
